@@ -405,6 +405,27 @@ h1.heading.pink:after {
   background-color: #37a7ff;
   box-shadow: 0 0 10px #37a7ff, 0 0 20px #37a7ff, 0 0 30px #37a7ff;
 }
+ul.text-left.tag {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.text-left.tag li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul.text-left.tag li:before {
+    content: "•";
+    color: #37a7ff; /* Customize the color as needed */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 
 /* Neon Animation for fun */
 @keyframes neon-glow {
