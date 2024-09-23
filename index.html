@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Umer Tahir</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    /* Add styles for the particles animation */
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #2c3e50; /* Adjust as needed */
+      z-index: -1; /* Ensure the animation stays behind the content */
+    }
+
+    .hero {
+      position: relative;
+      z-index: 1;
+      /* Skills Section Styling */
+    .skills-section {
+      padding: 40px;
+      background-color: #1c1c1c;
+      color: #fff;
+      text-align: center;
+    }
+
+    .skills-section h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .skill-group {
+      margin-bottom: 30px;
+    }
+
+    .major-skill {
+      font-size: 1.8rem;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .major-skill:hover {
+      border-color: #37a7ff;
+      text-shadow: 0 0 10px #37a7ff;
+    }
+
+    .sub-skills {
+      list-style-type: none;
+      padding: 0;
+      display: none; /* Hidden by default */
+      margin-top: 20px;
+    }
+
+    .sub-skills li {
+      font-size: 1.2rem;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 10px 0;
+      background-color: #2c2c2c;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .sub-skills li:hover {
+      color: #fff;
+      background-color: #37a7ff;
+      box-shadow: 0 0 10px #37a7ff, 0 0 20px #37a7ff, 0 0 30px #37a7ff;
+    }
+
+    /* Neon Animation for fun */
+    @keyframes neon-glow {
+      0% {
+        text-shadow: 0 0 5px #37a7ff, 0 0 10px #37a7ff, 0 0 15px #37a7ff;
+      }
+      50% {
+        text-shadow: 0 0 10px #37a7ff, 0 0 20px #37a7ff, 0 0 30px #37a7ff;
+      }
+      100% {
+        text-shadow: 0 0 5px #37a7ff, 0 0 10px #37a7ff, 0 0 15px #37a7ff;
+      }
+    }
+
+    /* Neon glow effect on click */
+    .major-skill.active {
+      animation: neon-glow 1.5s infinite alternate;
+    }
+
+    }
+  </style>
+</head>
+<body>
+  <!-- Particle animation container -->
+  <div id="particles-js"></div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6 col-xs-12">
+          <nav>
+            <div id="menu-toggle">
+              <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <div class="cross">
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+            
+          </nav>
+
+          <div class="hero-text">
+            <h1><span>Hi, I am</span><br>Muhammad Umer Tahir</h1>
+            <h3>Junior at Rhodes College majoring in Computer Science with a concentration in Data Analytics and minor in Statistics</h3>
+            <p>Email: tahmu-26@rhodes.edu | Phone: 901-907-6294</p>
+            <a href="#" class="btn btn-lg btn-primary">Know More</a>
+            <ul class="social-links">
+              <li class="label">Please checkout my LinkedIn and GitHub</li>
+              <li><a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/" target="_blank">
+      <img src="assets/linkedin.png" alt="LinkedIn"></a></li>
+              <li><a href="https://github.com/umer0335" target="_blank">
+      <img src="assets/github.png" alt="GitHub"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Work Experience Section -->
+  <section class="case-study">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="sub-heading">Work</h4>
+          <h1 class="heading purple">Experience</h1>
+
+          <!-- Swiper -->
+          <div class="swiper-container client-swiper">
+            <div class="swiper-wrapper">
+              <!-- Experience 1 -->
+              <div class="swiper-slide client-box">
+                <img src="assets/rhodes.png" class="client-logo">
+                <h3 class="text-left title">Data Analyst Research Fellowship</h3>
+                <p class="text-left tag">Rhodes College, Memphis, Tennessee</p>
+                <ul class="text-left tag">
+                  <li>- Applied supervised machine learning algorithms to analyze financial datasets.</li>
+                  <li>- Designed and optimized Python machine learning pipelines, improving processing time by 20%.</li>
+                  <li>- Developed stock prediction models, increasing accuracy by 10%.</li>
+                  <li>- Presented machine learning algorithms and trained peers on TensorFlow and neural networks.</li>
+                </ul>
+                <p class="text-left date">May 2024 - Sep 2024</p>
+              </div>
+              <!-- Experience 2 -->
+              <div class="swiper-slide client-box">
+                <img src="assets/rhodes.png" class="client-logo">
+                <h3 class="text-left title">RHOK-SAT CubeSat Research Project</h3>
+                <p class="text-left tag">Rhodes College, Memphis, Tennessee</p>
+                <ul class="text-left tag">
+                  <li>- Developed a Python program to enhance satellite data frame retrieval by 30% in partnership with NASA.</li>
+                  <li>- Operated ground station antennas using Gpredict and TLEs, receiving satellite data packets.</li>
+                  <li>- Established local server capturing and displaying log data with Python scripts.</li>
+                  <li>- Designed HTML/CSS telemetry dashboard for data visualization using Plotly and Dash.</li>
+                  <li>- Developed a private website login page with Python Dash, and visualized satellite paths using Folium and Ephem.</li>
+                </ul>
+                <p class="text-left date">Jan 2023 - Sep 2024</p>
+              </div>
+              <!-- Experience 3 -->
+              <div class="swiper-slide client-box">
+                <img src="assets/decar.png" class="client-logo">
+                <h3 class="text-left title">Assistant Data Analyst</h3>
+                <p class="text-left tag">DecARcerate, Memphis, Tennessee</p>
+                <ul class="text-left tag">
+                  <li>- Built a web scraper to collect data on traffic violations and pre-tax charges.</li>
+                  <li>- Organized data in large spreadsheets and assisted volunteer teams.</li>
+                  <li>- Collaborated on a campaign advocating for just policies in criminal justice.</li>
+                  <li>- Gained experience in data collection, spreadsheet management, and campaign organizing.</li>
+                </ul>
+                <p class="text-left date">Feb 2023 - Apr 2023</p>
+              </div>
+              <!-- Experience 4 -->
+              <div class="swiper-slide client-box">
+                <img src="assets/rhodes.png" class="client-logo">
+                <h3 class="text-left title">RSA Software and Data Manager</h3>
+                <p class="text-left tag">Rhodes College, Memphis, Tennessee</p>
+                <ul class="text-left tag">
+                  <li>- Help students on campus plan and organize events.</li>
+                  <li>- Manage Excel sheets and event database.</li>
+                  <li>- Approve event proposals using college event software for campus organizations.</li>
+                  <li>- Assist event holders in arranging events, reserving spaces, and setting up furniture.</li>
+                  <li>- Collaborate with different departments to ensure successful events.</li>
+                  <li>- Promote events through social media and other channels.</li>
+                  <li>- Monitor event budgets and logistics such as vendor coordination and equipment rentals.</li>
+                  <li>- Provide customer service to event attendees and handle on-site issues.</li>
+                </ul>
+                <p class="text-left date">Mar 2023 - Present</p>
+              </div>    
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Projects Section -->
+<section class="projects-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="heading">My Projects</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 project-card">
+        <img src="assets/ml.png" alt="Project Icon" class="project-icon">
+        <h3>California House Price Predictor</h3>
+        <p>Developed a predictive model to estimate house prices in California using historical data.</p>
+        <a href="https://github.com/umer0335/California-house-price-predictor" class="project-link">Live Link &rarr;</a>
+      </div>
+      <div class="col-md-6 project-card">
+        <img src="assets/ml.png" alt="Project Icon" class="project-icon">
+        <h3>Student Enrollment Predictor</h3>
+        <p>Developed a machine learning model to predict student enrollment at Rhodes College.</p>
+        <a href="https://github.com/umer0335/College-student-enrollment-predictor-" class="project-link">Live Link &rarr;</a>
+      </div>
+      <div class="col-md-6 project-card">
+        <img src="assets/ecom.jpg" alt="Project Icon" class="project-icon">
+        <h3>Optix One Ecommerce Store</h3>
+        <p>Managed and optimized the Optix One e-commerce store, enhancing SEO and user experience.</p>
+        <a href="https://optixone.co/" class="project-link">Live Link &rarr;</a>
+      </div>
+      <div class="col-md-6 project-card">
+        <img src="assets/web.png" alt="Project Icon" class="project-icon">
+        <h3>Web Scraper for DecARcerate</h3>
+        <p>Developed a web scraper to collect data from the Shelby County Criminal Justice System.</p>
+        <a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/details/projects/" class="Learn more about the project">Live Link &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skill-group">
+        <h3 class="major-skill" onclick="toggleSkills('data-analytics')">Data Analytics</h3>
+        <ul class="sub-skills" id="data-analytics">
+            <li>Data Cleaning</li>
+            <li>Data Aggregation</li>
+            <li>Data Query</li>
+            <li>Regression Models</li>
+            <li>Predictive Modeling</li>
+            <li>Algorithm Analysis</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h3 class="major-skill" onclick="toggleSkills('web-development')">Web Development</h3>
+        <ul class="sub-skills" id="web-development">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Web Applications</li>
+            <li>User Experience (UX)</li>
+            <li>Web Design</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h3 class="major-skill" onclick="toggleSkills('machine-learning')">Machine Learning</h3>
+        <ul class="sub-skills" id="machine-learning">
+            <li>Supervised Learning</li>
+            <li>Deep Learning</li>
+            <li>Regression Models</li>
+            <li>Predictive Modeling</li>
+            <li>Data Analysis</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h3 class="major-skill" onclick="toggleSkills('digital-marketing')">Digital Marketing</h3>
+        <ul class="sub-skills" id="digital-marketing">
+            <li>Google Ads</li>
+            <li>Social Media Marketing</li>
+            <li>SEO</li>
+            <li>Facebook Marketing</li>
+            <li>Google Analytics</li>
+        </ul>
+    </div>
+</section>
+
+
+  <!-- Programming Languages Section -->
+<section class="skills-section" id="skills">
+    <h2 class="text-center">Programming Languages I Know</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/python.png" alt="Python Logo" class="img-fluid">
+                    <p>Python</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/Java.jpeg" alt="Java Logo" class="img-fluid">
+                    <p>Java</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/c.png" alt="C Logo" class="img-fluid">
+                    <p>C Language</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/C++.svg" alt="C++ Logo" class="img-fluid">
+                    <p>C++</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/SQL.png" alt="SQL Logo" class="img-fluid">
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/R.jpeg" alt="R Logo" class="img-fluid">
+                    <p>R</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/HTML.png" alt="HTML Logo" class="img-fluid">
+                    <p>HTML</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="skill">
+                    <img src="assets/CSS.svg" alt="CSS Logo" class="img-fluid">
+                    <p>CSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics -->
+  <section class="stats">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center stat-box">
+          <h1 class="purple">3.5</h1>
+          <h3>GPA</h3>
+        </div>
+        <div class="col-md-4 text-center stat-box">
+          <h1 class="blue">5+</h1>
+          <h3>Projects</h3>
+        </div>
+        <div class="col-md-4 text-center stat-box">
+          <h1 class="pink">3+</h1>
+          <h3>Internships</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12 text-center">
+          <h1>Muhammad<br><span>Umer Tahir</span></h1>
+          <ul class="social-links">
+                      <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/" target="_blank">
+              <img src="assets/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/umer0335" target="_blank">
+              <img src="assets/github.png" alt="GitHub"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row sub-footer">
+        <div class="col-md-12 text-center">
+          <p>Thank you for visiting my website <a href="#" target="_blank"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include the Particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Include your custom JS file for particles.js configuration -->
+  <script src="app.js"></script>
+
+  <!-- Link to the toggleSkills JavaScript file -->
+  <script src="script.js"></script>
+
+  <!-- Some Javascript -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <script>
+    var swiper1 = new Swiper('.client-swiper', {
+      slidesPerView: 3,
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 60,
+      breakpoints: {
+        320: { slidesPerView: 1, spaceBetween: 10 },
+        480: { slidesPerView: 1, spaceBetween: 20 },
+        640: { slidesPerView: 1, spaceBetween: 30 }
+      }
+    });
+    var swiper2 = new Swiper('.testimonial-swiper', {
+      slidesPerView: 3,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      freeMode: true,
+      breakpoints: {
+        320: { slidesPerView: 1, spaceBetween: 10 },
+        480: { slidesPerView: 1, spaceBetween: 10 },
+        640: { slidesPerView: 1, spaceBetween: 10 }
+      }
+    });
+  </script>
+
+  <!-- Additional JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+</body>
+</html>
+
