@@ -108,3 +108,4 @@ particlesJS('particles-js', {
   },
   retina_detect: true
 });
+document.querySelector('#particles-js canvas').style.backgroundColor = 'black';
