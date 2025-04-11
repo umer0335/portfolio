@@ -501,4 +501,92 @@ ul.text-left.tag li:before {
   .project-card, .skill {
     max-width: 90%;
   }
+
 }
+.future-plans {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #37a7ff;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 20px;
+  animation: fadeSlideUp 1.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 4px 15px rgba(55, 167, 255, 0.1);
+}
+
+.future-plans-logo {
+  height: 40px;
+  width: auto;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.case-study {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background: #000 !important;
+}
+
+header.hero {
+  margin-bottom: 0;
+}
+/* for the statistics section */
+.stat-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.stat-number {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.label-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.label-subtext {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+/* Optional: color classes */
+.purple {
+  color: #8e44ad;
+}
+
+.blue {
+  color: #37a7ff;
+}
+
+.pink {
+  color: #e84393;
+}
+
+

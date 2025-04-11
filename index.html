@@ -146,7 +146,17 @@
       </div>
     </div>
   </header>
-
+  <!-- Future Plans / Internship Announcement Section -->
+<section id="future-plans" class="case-study" style="background-color: #000; padding: 70px 0; color: white;">
+  <div class="col-md-12" style="background-color: #000;">
+    <h4 class="sub-heading" style="color: #ccc; letter-spacing: 1px;">FUTURE PLANS</h4>
+    <h1 class="heading" style="color: #fff; font-size: 3rem; margin-bottom: 40px;">Incoming Internship</h1>
+    <div class="future-plans" style="display: flex; align-items: center; gap: 25px; background-color: #000; padding: 25px 35px; border-radius: 25px; box-shadow: 0 10px 40px rgba(255, 255, 255, 0.05);">
+      <img src="assets/highline-warren.png" alt="Highline Warren Logo" style="height: 120px; width: auto; background-color: white; border-radius: 12px; padding: 10px;">
+      <span style="font-size: 1.5em; font-weight: 700; color: white; line-height: 1.6;">🚀 Summer 2025 Data Analyst Intern @ Highline Warren! </span>
+    </div>
+  </div>
+</section>
   <!-- Work Experience Section -->
   <section class="case-study">
     <div class="container">
@@ -375,23 +385,33 @@
 
 <!-- Statistics -->
   <section class="stats">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 text-center stat-box">
-          <h1 class="purple">3.56</h1>
-          <h3>GPA</h3>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-4 mb-4">
+        <div class="stat-card text-center">
+          <h1 class="stat-number purple">3.56</h1>
+          <h3 class="label-title">GPA</h3>
+          <small class="label-subtext">Cumulative over 6 semesters</small>
         </div>
-        <div class="col-md-4 text-center stat-box">
-          <h1 class="blue">5+</h1>
-          <h3>Projects</h3>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+        <div class="stat-card text-center">
+          <h1 class="stat-number blue">8+</h1>
+          <h3 class="label-title">Projects</h3>
+          <small class="label-subtext">Academic & personal projects</small>
         </div>
-        <div class="col-md-4 text-center stat-box">
-          <h1 class="pink">3+</h1>
-          <h3>Internships</h3>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-4">
+        <div class="stat-card text-center">
+          <h1 class="stat-number pink">4+</h1>
+          <h3 class="label-title">Internships</h3>
+          <small class="label-subtext">In tech, data, and research</small>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
 
   <!-- Footer -->
@@ -456,9 +476,46 @@
       }
     });
   </script>
+<!-- for confetti animation -->
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  const futureSection = document.getElementById('future-plans');
+  let hasFired = false;
 
-  <!-- Additional JavaScript -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <script src="js/jquery.counterup.min.js"></script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasFired) {
+        hasFired = true; // only trigger once
+        const duration = 1000;
+        const end = Date.now() + duration;
+
+        (function frame() {
+          confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+            colors: ['#37A7FF', '#ffffff']
+          });
+          confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+            colors: ['#37A7FF', '#ffffff']
+          });
+
+          if (Date.now() < end) {
+            requestAnimationFrame(frame);
+          }
+        })();
+      }
+    });
+  }, { threshold: 0.5 }); // triggers when 50% of the section is visible
+
+  observer.observe(futureSection);
+</script>
+
+
 </body>
 </html>
