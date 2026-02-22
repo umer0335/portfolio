@@ -9,512 +9,445 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link href="css/style.css" rel="stylesheet">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
-
-  <style>
-    /* Add styles for the particles animation */
-    #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: #2c3e50; /* Adjust as needed */
-      z-index: -1; /* Ensure the animation stays behind the content */
-    }
-
-    .hero {
-      position: relative;
-      z-index: 1;
-      /* Skills Section Styling */
-    .skills-section {
-      padding: 40px;
-      background-color: #1c1c1c;
-      color: #fff;
-      text-align: center;
-    }
-
-    .skills-section h2 {
-      font-size: 2.5rem;
-      color: #fff;
-      margin-bottom: 40px;
-      text-transform: uppercase;
-    }
-
-    .skill-group {
-      margin-bottom: 30px;
-    }
-
-    .major-skill {
-      font-size: 1.8rem;
-      cursor: pointer;
-      position: relative;
-      display: inline-block;
-      padding: 10px;
-      border: 2px solid transparent;
-      transition: all 0.3s ease;
-    }
-
-    .major-skill:hover {
-      border-color: #37a7ff;
-      text-shadow: 0 0 10px #37a7ff;
-    }
-
-    .sub-skills {
-      list-style-type: none;
-      padding: 0;
-      display: none; /* Hidden by default */
-      margin-top: 20px;
-    }
-
-    .sub-skills li {
-      font-size: 1.2rem;
-      padding: 10px;
-      border-radius: 10px;
-      margin: 10px 0;
-      background-color: #2c2c2c;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .sub-skills li:hover {
-      color: #fff;
-      background-color: #37a7ff;
-      box-shadow: 0 0 10px #37a7ff, 0 0 20px #37a7ff, 0 0 30px #37a7ff;
-    }
-
-    /* Neon Animation for fun */
-    @keyframes neon-glow {
-      0% {
-        text-shadow: 0 0 5px #37a7ff, 0 0 10px #37a7ff, 0 0 15px #37a7ff;
-      }
-      50% {
-        text-shadow: 0 0 10px #37a7ff, 0 0 20px #37a7ff, 0 0 30px #37a7ff;
-      }
-      100% {
-        text-shadow: 0 0 5px #37a7ff, 0 0 10px #37a7ff, 0 0 15px #37a7ff;
-      }
-    }
-
-    /* Neon glow effect on click */
-    .major-skill.active {
-      animation: neon-glow 1.5s infinite alternate;
-    }
-
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Particle animation container -->
-  <div id="particles-js"></div>
+  <header class="hero" id="home">
+    <div class="space-scene" aria-hidden="true">
+      <div class="stars stars-a"></div>
+      <div class="stars stars-b"></div>
+      <div class="nebula"></div>
+      <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit orbit-1"><span class="planet mercury"></span></div>
+        <div class="orbit orbit-2"><span class="planet neon-blue"></span></div>
+        <div class="orbit orbit-3"><span class="planet neon-pink"></span></div>
+        <div class="orbit orbit-4"><span class="planet neon-green"></span></div>
+        <div class="orbit orbit-5"><span class="planet ice"></span></div>
+      </div>
+    </div>
 
-  <header class="hero">
-    <div class="container">
+    <div class="container hero-content">
+      <nav class="quick-nav" aria-label="Main navigation">
+        <a href="#career-announcement">Announcement</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#stats">Stats</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
       <div class="row">
-        <div class="col-md-6 col-md-offset-6 col-xs-12">
-          <nav>
-            <div id="menu-toggle">
-              <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-              <div class="cross">
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            </div>
-            
-          </nav>
-
-          <div class="hero-text">
+        <div class="col-md-7 col-lg-6 col-xs-12">
+          <div class="hero-text glass-panel">
+            <p class="eyebrow">Data + Business + Technology</p>
             <h1><span>Hi, I am</span><br>Muhammad Umer Tahir</h1>
-            <h3>Senior at Rhodes College majoring in Computer Science with a concentration in Data Analytics and minor in Statistics. Set to Graduate in May 2026.</h3>
-            <p>Email: tahmu-26@rhodes.edu | Phone: 901-907-6294</p>
-            <a href="assets/Resume.pdf" class="btn btn-lg btn-primary" download>Download Resume</a>
-            <ul class="social-links">
-              <li class="label">Please checkout my LinkedIn, GitHub and Tableau links</li>
-              <li><a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/" target="_blank">
-      <img src="assets/linkedin.png" alt="LinkedIn"></a></li>
-              <li><a href="https://github.com/umer0335" target="_blank">
-      <img src="assets/github.png" alt="GitHub"></a></li>
-      <li><a href="https://public.tableau.com/app/profile/muhammad.umer.tahir/vizzes" target="_blank">
-      <img src="assets/tableau.png" alt="Tableau"></a></li>
+            <h3>
+              Senior at Rhodes College majoring in Computer Science with a concentration in Data Analytics
+              and minor in Statistics. Set to graduate in May 2026.
+            </h3>
+            <p class="contact-line">Email: tahmu-26@rhodes.edu | Phone: 901-907-6294</p>
+            <div class="hero-actions">
+              <a href="assets/resume.pdf" class="btn btn-lg btn-primary-neo" download>Download Resume</a>
+              <a href="#contact" class="btn btn-lg btn-ghost-neo">Let&apos;s Connect</a>
+            </div>
+            <ul class="social-links" aria-label="Social links">
+              <li class="label">LinkedIn, GitHub and Tableau</li>
+              <li>
+                <a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/linkedin.png" alt="LinkedIn">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/umer0335" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/github.png" alt="GitHub">
+                </a>
+              </li>
+              <li>
+                <a href="https://public.tableau.com/app/profile/muhammad.umer.tahir/vizzes" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/tableau.png" alt="Tableau">
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- Future Plans / Internship Announcement Section -->
-<section id="future-plans" class="case-study" style="background-color: #000; padding: 70px 0; color: white;">
-  <div class="col-md-12" style="background-color: #000;">
-    <h4 class="sub-heading" style="color: #ccc; letter-spacing: 1px;">Working as someone who bridges business and technology</h4>
-    <h1 class="heading" style="color: #fff; font-size: 3rem; margin-bottom: 40px;">Current Internship</h1>
-    <div class="row justify-content-center" style="display: flex; align-items: center; gap: 25px; background-color: #000; padding: 25px 35px; border-radius: 25px; box-shadow: 0 10px 40px rgba(255, 255, 255, 0.05);">
-      <div class="text-center mb-4">
-        <div class="p-4 d-flex flex-column flex-md-row align-items-center justify-content-center gap-3" style="background-color: #111; border-radius: 25px;">
-      <img src="assets/highline-warren.png" alt="Highline Warren Logo" style="height: 120px; width: auto; background-color: white; border-radius: 12px; padding: 10px;">
-      <span style="font-size: 1.5em; font-weight: 700; color: white; line-height: 1.6;">🚀 Data Analyst Intern @ Highline Warren! </span>
-    </div>
-  </div>
-</section>
-  <!-- Work Experience Section -->
-  <section class="case-study">
+
+  <section id="career-announcement" class="announcement-section section-shell wayfair-section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h4 class="sub-heading">Work</h4>
-          <h1 class="heading purple">Experience</h1>
-          <div class="swiper-container client-swiper">
-            <div class="swiper-wrapper">
-              <!-- Highline Warren -->
-              <div class="swiper-slide client-box">
-                <img src="assets/highline-warren.png" class="client-logo" alt="Highline Warren Logo">
-                <h3 class="text-left title">Data Analytics Intern</h3>
-                <p class="text-left tag">Highline Warren, Memphis, TN</p>
-                <ul class="text-left tag">
-                  <p class="text-left date">May 2025 - Present</p>
-                  <li>HR Analytics: Designed and delivered HR & Payroll dashboards in Sigma BI, equipping 40+ leaders with insights for workforce planning, cost management, and compliance.</li>
-                  <li>Communication & Leadership: Partnered with cross-functional stakeholders to lead discovery sessions, gather requirements, and translate business needs into KPIs and actionable reporting.</li>
-                  <li>Data Pipeline (ETL): Streamlined data pipelines in SQL and Snowflake, reducing operational costs by 90% and ensuring consistent, timely data for executive decision-making.</li>
-                  <li>Data Visualization: Built interactive dashboards with filters and pivot tables, enabling leaders to track performance trends and drill down into key metrics.</li>
-                  <li>Supply Chain Analysis: Conducted supply chain cost analysis through a Freight Threshold Override dashboard, identifying anomalies and uncovering $4.2M in annual freight cost opportunities.</li>
-                </ul>
-              </div>
-              <!-- Optix One -->
-              <div class="swiper-slide client-box">
-                <img src="assets/Optix One.png" class="client-logo" alt="Optix One Logo">
-                <h3 class="text-left title">Business Intelligence / Technology Consultant</h3>
-                <p class="text-left tag">Optix One, Remote</p>
-                <ul class="text-left tag">
-                  <p class="text-left date">Mar 2023 - Present</p>
-                  <li>Technology Consulting: Led digital transformation by integrating Shopify e-commerce with Odoo ERP, enabling unified tracking of inventory, invoices, and financial reporting.</li>
-                  <li>Data Migration: Oversaw the migration of financial and operational data from legacy systems, ensuring accuracy and continuity of business operations.</li>
-                  <li>E-Commerce & Digital Marketing: Advised leadership on e-commerce growth strategy, optimizing inventory hierarchy and digital marketing to improve ad ROI, conversion rates, and customer retention.</li>
-                  <li>Data Analysis: Conducted profitability and shipping cost analysis, setting a data-driven free shipping threshold using KPIs such as profit per article, average order value, and shipping cost % of revenue.</li>
-                </ul>
-              </div>
-              <!-- Rhodes College Data Analyst -->
-              <div class="swiper-slide client-box">
-                <img src="assets/rhodes.png" class="client-logo" alt="Rhodes College Logo">
-                <h3 class="text-left title">Data Analyst</h3>
-                <p class="text-left tag">Rhodes College, Memphis, TN</p>
-                <ul class="text-left tag">
-                  <p class="text-left date">May 2024 - Sep 2024</p>
-                  <li>Machine Learning: Built a predictive model to forecast student enrollment, providing administration with early insights for resource planning across 6,000+ students.</li>
-                  <li>ML Modelling: Improved accuracy of forecasting models by 8%, strengthening decision-making around admissions and enrollment.</li>
-                  <li>Leadership & Communication: Presented findings to professors and peers, simplifying complex machine learning concepts into actionable insights for academic planning.</li>
-                </ul>
-              </div>
-              <!-- Rhodes College Rhok SAT CubeSat -->
-              <div class="swiper-slide client-box">
-                <img src="assets/nasa.png" class="client-logo" alt="NASA Logo">
-                <h3 class="text-left title">SAT CubeSat Research Project</h3>
-                <p class="text-left tag">Rhodes College Rhok, Memphis, TN</p>
-                <ul class="text-left tag">
-                  <p class="text-left date">Apr 2023 - Aug 2023</p>
-                  <li>Data Engineering: Engineered data collection pipelines for satellite telemetry, ensuring accurate data transfer for research teams.</li>
-                  <li>Data Analysis: Developed a dynamic dashboard to visualize telemetry trends, enabling real-time monitoring and faster decision-making for research objectives.</li>
-                  <li><a href="https://www.nasa.gov/kennedy/launch-services-program/cubesat-launch-initiative/" class="project-link">Learn More &rarr;</a></li>
-                </ul>
-              </div>
-              <!-- DecARcerate Memphis -->
-              <div class="swiper-slide client-box">
-                <img src="assets/decar.png" class="client-logo" alt="DecARcerate Logo">
-                <h3 class="text-left title">Assistant Data Analyst</h3>
-                <p class="text-left tag">DecARcerate, Memphis, TN</p>
-                <ul class="text-left tag">
-                  <p class="text-left date">Feb 2023 - Apr 2023</p>
-                  <li>Built a web scraper to collect data on traffic violations and pre-tax charges from the Shelby County Criminal Justice System.</li>
-                  <li>Organized and managed large spreadsheets, supporting volunteer teams in data-driven advocacy.</li>
-                  <li>Collaborated on campaigns for criminal justice reform, contributing to policy recommendations and public awareness efforts.</li>
-                  <li>Gained hands-on experience in data collection, spreadsheet management, and campaign organizing.</li>
-                </ul>
-              </div>
-            </div>
+      <div class="announcement-card wayfair-card">
+        <h4 class="sub-heading">Announcement</h4>
+        <h1 class="heading">Career Update</h1>
+        <div class="wayfair-highlight">
+          <div class="wayfair-wordmark" aria-label="Wayfair Professional">
+            <span class="wayfair-dot"></span>
+            <span>wayfair professional</span>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div>
+            <p class="badge-text">Incoming Operations Analyst at Wayfair</p>
+            <p class="announcement-desc">Excited to join the team and contribute to operational excellence through analytics, process optimization, and cross-functional collaboration.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- My Projects Section -->
-<section class="projects-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 class="heading">My Projects</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 project-card">
-        <img src="assets/ml.png" alt="Project Icon" class="project-icon">
-        <h3>California House Price Predictor</h3>
-        <p>Developed a predictive model to estimate house prices in California using historical data.</p>
-        <a href="https://github.com/umer0335/California-house-price-predictor" class="project-link">Live Link &rarr;</a>
-      </div>
-      <div class="col-md-6 project-card">
-        <img src="assets/ml.png" alt="Project Icon" class="project-icon">
-        <h3>Student Enrollment Predictor</h3>
-        <p>Developed a machine learning model to predict student enrollment at Rhodes College.</p>
-        <a href="https://github.com/umer0335/College-student-enrollment-predictor-" class="project-link">Live Link &rarr;</a>
-      </div>
-      <div class="col-md-6 project-card">
-        <img src="assets/ecom.jpg" alt="Project Icon" class="project-icon">
-        <h3>Optix One Ecommerce Store</h3>
-        <p>Managed and optimized the Optix One e-commerce store, enhancing SEO and user experience.</p>
-        <a href="https://optixone.co/" class="project-link">Live Link &rarr;</a>
-      </div>
-      <div class="col-md-6 project-card">
-        <img src="assets/web.png" alt="Project Icon" class="project-icon">
-        <h3>Web Scraper for DecARcerate</h3>
-        <p>Developed a web scraper to collect data from the Shelby County Criminal Justice System.</p>
-        <a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/details/projects/" class="Learn more about the project">Live Link &rarr;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="skills-section">
-  <h2>Skills</h2>
-  <div class="skill-group">
-    <h3 class="major-skill" onclick="toggleSkills('business-solutions')">Business Solutions</h3>
-    <ul class="sub-skills" id="business-solutions">
-      <li>Business Intelligence</li>
-      <li>Supply Chain Analysis</li>
-      <li>Marketing Analysis</li>
-      <li>ERP Integration</li>
-      <li>Monday.com (PM)</li>
-    </ul>
-  </div>
-  <div class="skill-group">
-    <h3 class="major-skill" onclick="toggleSkills('analytics')">Analytics</h3>
-    <ul class="sub-skills" id="analytics">
-      <li>Tableau</li>
-      <li>Jira</li>
-      <li>Power BI</li>
-      <li>Data Transformation</li>
-      <li>KPI Data Mapping</li>
-      <li>BI Data Modelling</li>
-      <li>Excel</li>
-    </ul>
-  </div>
-  <div class="skill-group">
-    <h3 class="major-skill" onclick="toggleSkills('technical')">Technical</h3>
-    <ul class="sub-skills" id="technical">
-      <li>Machine Learning</li>
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Sci-kit learn</li>
-      <li>JAVA</li>
-      <li>R</li>
-      <li>Matplotlib</li>
-      <li>Office</li>
-      <li>Snowflake</li>
-      <li>Data Pipeline</li>
-      <li>TensorFlow</li>
-      <li>C</li>
-      <li>Power Automate</li>
-      <li>Data Engineering</li>
-      <li>Forecasting (Prophet)</li>
-    </ul>
-  </div>
-</section>
-
-
-  <!-- Programming Languages Section -->
-<section class="skills-section" id="skills">
-    <h2 class="text-center">Programming Languages I Know</h2>
+  <section id="experience" class="case-study section-shell">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/python.png" alt="Python Logo" class="img-fluid">
-                    <p>Python</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/Java.jpeg" alt="Java Logo" class="img-fluid">
-                    <p>Java</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/c.png" alt="C Logo" class="img-fluid">
-                    <p>C Language</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/C++.svg" alt="C++ Logo" class="img-fluid">
-                    <p>C++</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/SQL.png" alt="SQL Logo" class="img-fluid">
-                    <p>SQL</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/R.jpeg" alt="R Logo" class="img-fluid">
-                    <p>R</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/HTML.png" alt="HTML Logo" class="img-fluid">
-                    <p>HTML</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                <div class="skill">
-                    <img src="assets/CSS.svg" alt="CSS Logo" class="img-fluid">
-                    <p>CSS</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="section-card">
+        <h4 class="sub-heading">Work</h4>
+        <h1 class="heading">Experience</h1>
 
-<!-- Statistics -->
-  <section class="stats">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-4 mb-4">
-        <div class="stat-card text-center">
-          <h1 class="stat-number purple">3.58</h1>
-          <h3 class="label-title">GPA</h3>
-          <small class="label-subtext">Cumulative over 6 semesters</small>
+        <div class="swiper-container client-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide client-box">
+              <img src="assets/highline-warren.png" class="client-logo" alt="Highline Warren Logo">
+              <h3 class="text-left title">Data Analytics Intern</h3>
+              <p class="text-left tag">Highline Warren, Memphis, TN</p>
+              <p class="text-left date">May 2025 - Present</p>
+              <ul class="text-left tag">
+                <li>HR Analytics: Designed and delivered HR and Payroll dashboards in Sigma BI, equipping 40+ leaders with insights for workforce planning, cost management, and compliance.</li>
+                <li>Communication and Leadership: Partnered with cross-functional stakeholders to lead discovery sessions, gather requirements, and translate business needs into KPIs and actionable reporting.</li>
+                <li>Data Pipeline (ETL): Streamlined data pipelines in SQL and Snowflake, reducing operational costs by 90% and ensuring consistent, timely data for executive decision-making.</li>
+                <li>Data Visualization: Built interactive dashboards with filters and pivot tables, enabling leaders to track performance trends and drill into key metrics.</li>
+                <li>Supply Chain Analysis: Conducted freight threshold analysis and identified $4.2M in annual freight cost opportunities.</li>
+              </ul>
+            </div>
+
+            <div class="swiper-slide client-box">
+              <img src="assets/Optix One.png" class="client-logo" alt="Optix One Logo">
+              <h3 class="text-left title">Business Intelligence / Technology Consultant</h3>
+              <p class="text-left tag">Optix One, Remote</p>
+              <p class="text-left date">Mar 2023 - Present</p>
+              <ul class="text-left tag">
+                <li>Technology Consulting: Led digital transformation by integrating Shopify e-commerce with Odoo ERP for unified inventory, invoicing, and reporting.</li>
+                <li>Data Migration: Oversaw migration of financial and operational data from legacy systems with strong data accuracy and continuity.</li>
+                <li>E-Commerce and Marketing: Advised leadership on growth strategy, improving ad ROI, conversion rate, and retention.</li>
+                <li>Data Analysis: Built profitability and shipping threshold analysis using KPIs such as average order value and shipping cost as percentage of revenue.</li>
+              </ul>
+            </div>
+
+            <div class="swiper-slide client-box">
+              <img src="assets/rhodes.png" class="client-logo" alt="Rhodes College Logo">
+              <h3 class="text-left title">Data Analyst</h3>
+              <p class="text-left tag">Rhodes College, Memphis, TN</p>
+              <p class="text-left date">May 2024 - Sep 2024</p>
+              <ul class="text-left tag">
+                <li>Machine Learning: Built a predictive model to forecast student enrollment for planning across 6,000+ students.</li>
+                <li>ML Modelling: Improved forecast accuracy by 8%, strengthening data-backed admissions planning.</li>
+                <li>Communication: Presented findings to professors and peers, translating complex technical concepts into practical decisions.</li>
+              </ul>
+            </div>
+
+            <div class="swiper-slide client-box">
+              <img src="assets/nasa.png" class="client-logo" alt="NASA Logo">
+              <h3 class="text-left title">SAT CubeSat Research Project</h3>
+              <p class="text-left tag">Rhodes College Rhok, Memphis, TN</p>
+              <p class="text-left date">Apr 2023 - Aug 2023</p>
+              <ul class="text-left tag">
+                <li>Data Engineering: Built telemetry collection pipelines for reliable research data transfer.</li>
+                <li>Data Analysis: Developed a dashboard for telemetry trends and real-time monitoring.</li>
+                <li><a href="https://www.nasa.gov/kennedy/launch-services-program/cubesat-launch-initiative/" class="project-link" target="_blank" rel="noopener noreferrer">Learn More &rarr;</a></li>
+              </ul>
+            </div>
+
+            <div class="swiper-slide client-box">
+              <img src="assets/decar.png" class="client-logo" alt="DecARcerate Logo">
+              <h3 class="text-left title">Assistant Data Analyst</h3>
+              <p class="text-left tag">DecARcerate, Memphis, TN</p>
+              <p class="text-left date">Feb 2023 - Apr 2023</p>
+              <ul class="text-left tag">
+                <li>Built a scraper to collect traffic violation and pre-trial charge data from the Shelby County system.</li>
+                <li>Organized and maintained large spreadsheet workflows for volunteer teams.</li>
+                <li>Supported criminal justice reform campaigns with data-backed policy insights.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-4 mb-4">
-        <div class="stat-card text-center">
-          <h1 class="stat-number blue">8+</h1>
-          <h3 class="label-title">Projects</h3>
-          <small class="label-subtext">Academic & personal projects</small>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 mb-4">
-        <div class="stat-card text-center">
-          <h1 class="stat-number pink">4+</h1>
-          <h3 class="label-title">Internships</h3>
-          <small class="label-subtext">In tech, data, and research</small>
-        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
+  <section id="projects" class="projects-section section-shell">
+    <div class="container">
+      <div class="section-card">
+        <h4 class="sub-heading">Portfolio</h4>
+        <h1 class="heading">Projects</h1>
 
-  <!-- Footer -->
-  <footer>
+        <div class="row project-grid-wrap">
+          <div class="col-md-6 project-card">
+            <img src="assets/ml.png" alt="Machine learning project icon" class="project-icon">
+            <h3>California House Price Predictor</h3>
+            <p>Developed a predictive model to estimate house prices in California using historical data.</p>
+            <a href="https://github.com/umer0335/California-house-price-predictor" class="project-link" target="_blank" rel="noopener noreferrer">Live Link &rarr;</a>
+          </div>
+
+          <div class="col-md-6 project-card">
+            <img src="assets/ml.png" alt="Machine learning project icon" class="project-icon">
+            <h3>Student Enrollment Predictor</h3>
+            <p>Developed a machine learning model to predict student enrollment at Rhodes College.</p>
+            <a href="https://github.com/umer0335/College-student-enrollment-predictor-" class="project-link" target="_blank" rel="noopener noreferrer">Live Link &rarr;</a>
+          </div>
+
+          <div class="col-md-6 project-card">
+            <img src="assets/ecom.jpg" alt="E-commerce project icon" class="project-icon">
+            <h3>Optix One Ecommerce Store</h3>
+            <p>Managed and optimized the Optix One e-commerce store, improving SEO and customer experience.</p>
+            <a href="https://optixone.co/" class="project-link" target="_blank" rel="noopener noreferrer">Live Link &rarr;</a>
+          </div>
+
+          <div class="col-md-6 project-card">
+            <img src="assets/web.png" alt="Web scraping project icon" class="project-icon">
+            <h3>Web Scraper for DecARcerate</h3>
+            <p>Built a scraper to collect and structure public justice-system records for analysis and advocacy.</p>
+            <a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/details/projects/" class="project-link" target="_blank" rel="noopener noreferrer">Live Link &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section skill-categories section-shell">
+    <div class="container">
+      <div class="section-card">
+        <h4 class="sub-heading">Capability Map</h4>
+        <h1 class="heading">Skills</h1>
+
+        <div class="skill-group">
+          <h3 class="major-skill" onclick="toggleSkills('business-solutions')" aria-expanded="false">Business Solutions</h3>
+          <ul class="sub-skills" id="business-solutions">
+            <li>Business Intelligence</li>
+            <li>Supply Chain Analysis</li>
+            <li>Marketing Analysis</li>
+            <li>ERP Integration</li>
+            <li>Monday.com (PM)</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="major-skill" onclick="toggleSkills('analytics')" aria-expanded="false">Analytics</h3>
+          <ul class="sub-skills" id="analytics">
+            <li>Tableau</li>
+            <li>Jira</li>
+            <li>Power BI</li>
+            <li>Data Transformation</li>
+            <li>KPI Data Mapping</li>
+            <li>BI Data Modelling</li>
+            <li>Excel</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="major-skill" onclick="toggleSkills('technical')" aria-expanded="false">Technical</h3>
+          <ul class="sub-skills" id="technical">
+            <li>Machine Learning</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Scikit-learn</li>
+            <li>Java</li>
+            <li>R</li>
+            <li>Matplotlib</li>
+            <li>Snowflake</li>
+            <li>Data Pipeline</li>
+            <li>TensorFlow</li>
+            <li>C</li>
+            <li>Power Automate</li>
+            <li>Data Engineering</li>
+            <li>Forecasting (Prophet)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="languages" class="skills-section language-section section-shell">
+    <div class="container">
+      <div class="section-card">
+        <h4 class="sub-heading">Tech Stack</h4>
+        <h1 class="heading">Programming Languages</h1>
+
+        <div class="row language-grid">
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/python.png" alt="Python Logo" class="img-fluid">
+              <p>Python</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/Java.jpeg" alt="Java Logo" class="img-fluid">
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/c.png" alt="C Logo" class="img-fluid">
+              <p>C</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/C++.svg" alt="C++ Logo" class="img-fluid">
+              <p>C++</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/SQL.png" alt="SQL Logo" class="img-fluid">
+              <p>SQL</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/R.jpeg" alt="R Logo" class="img-fluid">
+              <p>R</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/HTML.png" alt="HTML Logo" class="img-fluid">
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div class="skill">
+              <img src="assets/CSS.svg" alt="CSS Logo" class="img-fluid">
+              <p>CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats" class="stats section-shell">
+    <div class="container">
+      <div class="section-card">
+        <h4 class="sub-heading">Highlights</h4>
+        <h1 class="heading">By The Numbers</h1>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="stat-card text-center">
+              <h1 class="stat-number purple">3.58</h1>
+              <h3 class="label-title">GPA</h3>
+              <small class="label-subtext">Cumulative over 6 semesters</small>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="stat-card text-center">
+              <h1 class="stat-number blue">8+</h1>
+              <h3 class="label-title">Projects</h3>
+              <small class="label-subtext">Academic and personal projects</small>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-4">
+            <div class="stat-card text-center">
+              <h1 class="stat-number pink">4+</h1>
+              <h3 class="label-title">Internships</h3>
+              <small class="label-subtext">Tech, data, and research roles</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
     <div class="container-fluid">
       <div class="row footer">
         <div class="col-md-12 text-center">
           <h1>Muhammad<br><span>Umer Tahir</span></h1>
+          <p class="footer-note">Thank you for visiting my portfolio.</p>
           <ul class="social-links">
-                      <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/" target="_blank">
-              <img src="assets/linkedin.png" alt="LinkedIn"></a></li>
-            <li><a href="https://github.com/umer0335" target="_blank">
-              <img src="assets/github.png" alt="GitHub"></a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/muhammad-umer-tahir-717181256/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/linkedin.png" alt="LinkedIn">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/umer0335" target="_blank" rel="noopener noreferrer">
+                <img src="assets/github.png" alt="GitHub">
+              </a>
+            </li>
+            <li>
+              <a href="https://public.tableau.com/app/profile/muhammad.umer.tahir/vizzes" target="_blank" rel="noopener noreferrer">
+                <img src="assets/tableau.png" alt="Tableau">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="row sub-footer">
         <div class="col-md-12 text-center">
-          <p>Thank you for visiting my website <a href="#" target="_blank"></a></p>
+          <p>Built with HTML, CSS, JavaScript, and a lot of iteration.</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Include the Particles.js library -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-  <!-- Include your custom JS file for particles.js configuration -->
-  <script src="app.js"></script>
-
-  <!-- Link to the toggleSkills JavaScript file -->
   <script src="script.js"></script>
-
-  <!-- Some Javascript -->
   <script src="js/jquery-2.1.1.js"></script>
   <script src="js/swiper.jquery.min.js"></script>
   <script>
     var swiper1 = new Swiper('.client-swiper', {
-      slidesPerView: 3,
+      slidesPerView: 2,
       paginationClickable: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      spaceBetween: 60,
+      spaceBetween: 24,
       breakpoints: {
-        320: { slidesPerView: 1, spaceBetween: 10 },
-        480: { slidesPerView: 1, spaceBetween: 20 },
-        640: { slidesPerView: 1, spaceBetween: 30 }
-      }
-    });
-    var swiper2 = new Swiper('.testimonial-swiper', {
-      slidesPerView: 3,
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      spaceBetween: 30,
-      grabCursor: true,
-      freeMode: true,
-      breakpoints: {
-        320: { slidesPerView: 1, spaceBetween: 10 },
-        480: { slidesPerView: 1, spaceBetween: 10 },
-        640: { slidesPerView: 1, spaceBetween: 10 }
+        320: { slidesPerView: 1, spaceBetween: 12 },
+        768: { slidesPerView: 1, spaceBetween: 16 },
+        1200: { slidesPerView: 2, spaceBetween: 24 }
       }
     });
   </script>
-<!-- for confetti animation -->
- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script>
-  const futureSection = document.getElementById('future-plans');
-  let hasFired = false;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !hasFired) {
-        hasFired = true; // only trigger once
-        const duration = 1000;
-        const end = Date.now() + duration;
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    const announcementSection = document.getElementById('career-announcement');
+    let hasFired = false;
 
-        (function frame() {
-          confetti({
-            particleCount: 3,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0 },
-            colors: ['#37A7FF', '#ffffff']
-          });
-          confetti({
-            particleCount: 3,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1 },
-            colors: ['#37A7FF', '#ffffff']
-          });
+    if (announcementSection) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasFired) {
+            hasFired = true;
+            const duration = 1000;
+            const end = Date.now() + duration;
 
-          if (Date.now() < end) {
-            requestAnimationFrame(frame);
+            (function frame() {
+              confetti({
+                particleCount: 4,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 },
+                colors: ['#7d2cff', '#d79bff', '#ffffff']
+              });
+              confetti({
+                particleCount: 4,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 },
+                colors: ['#b45bff', '#ffffff', '#934dff']
+              });
+
+              if (Date.now() < end) {
+                requestAnimationFrame(frame);
+              }
+            })();
           }
-        })();
-      }
-    });
-  }, { threshold: 0.5 }); // triggers when 50% of the section is visible
+        });
+      }, { threshold: 0.45 });
 
-  observer.observe(futureSection);
-</script>
-
-
+      observer.observe(announcementSection);
+    }
+  </script>
 </body>
 </html>
