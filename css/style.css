@@ -30,7 +30,7 @@ body {
     radial-gradient(circle at 90% 0, rgba(255, 101, 212, 0.18), transparent 42%),
     linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-deep) 65%, #04070f 100%);
   color: var(--text-main);
-  font-size: 17px;
+  font-size: calc(17px + 4pt);
   letter-spacing: 0.01em;
   line-height: 1.6;
 }
@@ -294,7 +294,7 @@ h1.heading::after {
 
 .quick-nav a {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(0.72rem, 0.95vw, 0.88rem);
+  font-size: calc(clamp(0.72rem, 0.95vw, 0.88rem) + 4pt);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #d7ebff;
@@ -329,7 +329,7 @@ h1.heading::after {
   letter-spacing: 0.15em;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem + 4pt);
 }
 
 header.hero h1 {
@@ -349,7 +349,7 @@ header.hero h1 span {
 
 header.hero h3 {
   margin: 1.25rem 0 0;
-  font-size: clamp(1rem, 1.75vw, 1.32rem);
+  font-size: calc(clamp(1rem, 1.75vw, 1.32rem) + 4pt);
   line-height: 1.62;
   color: var(--text-soft);
   font-weight: 400;
@@ -359,7 +359,7 @@ header.hero h3 {
 .contact-line {
   margin-top: 1.25rem;
   color: #e6f2ff;
-  font-size: 1rem;
+  font-size: calc(1rem + 4pt);
 }
 
 .hero-actions {
@@ -373,7 +373,7 @@ header.hero h3 {
 .btn-ghost-neo {
   border-radius: 999px;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem + 4pt);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -430,7 +430,7 @@ header.hero h3 {
 .social-links li.label {
   color: var(--text-soft);
   margin-right: 0.5rem;
-  font-size: 0.95rem;
+  font-size: calc(0.95rem + 4pt);
 }
 
 .social-links li a {
@@ -471,7 +471,7 @@ header.hero h3 {
 .badge-text {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-size: calc(clamp(1.15rem, 2.2vw, 1.55rem) + 4pt);
   font-weight: 700;
   color: #e6f5ff;
 }
@@ -505,7 +505,7 @@ header.hero h3 {
 .announcement-desc {
   margin: 0.35rem 0 0;
   color: #ead9ff;
-  font-size: 1.08rem;
+  font-size: calc(1.08rem + 4pt);
   line-height: 1.58;
 }
 
@@ -518,7 +518,7 @@ header.hero h3 {
   padding: 0.8rem 1rem;
   border-radius: 14px;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.05rem;
+  font-size: calc(1.05rem + 4pt);
   font-weight: 700;
   text-transform: lowercase;
   color: #fff;
@@ -590,14 +590,14 @@ header.hero h3 {
   margin: 0.12rem 0 0;
   color: #95c2ef;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.05rem;
+  font-size: calc(1.05rem + 4pt);
   line-height: 1.35;
 }
 
 .client-box p.date {
   margin: 0.3rem 0 0.45rem;
   color: #d8e8fa;
-  font-size: 0.95rem;
+  font-size: calc(0.95rem + 4pt);
   letter-spacing: 0.01em;
 }
 
@@ -611,7 +611,7 @@ ul.text-left.tag li {
   padding-left: 1.05rem;
   position: relative;
   line-height: 1.58;
-  font-size: 1.08rem;
+  font-size: calc(1.08rem + 4pt);
   color: #d6e7fd;
   word-break: normal;
 }
@@ -696,14 +696,14 @@ ul.text-left.tag li::before {
 .project-card p {
   margin: 0.68rem 0 0.95rem;
   color: #ccdef3;
-  font-size: 1.02rem;
+  font-size: calc(1.02rem + 4pt);
   line-height: 1.55;
 }
 
 .project-link {
   color: var(--accent-cyan);
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1rem;
+  font-size: calc(1rem + 4pt);
   letter-spacing: 0.02em;
   font-weight: 600;
 }
@@ -755,7 +755,7 @@ ul.text-left.tag li::before {
 
 .sub-skills li {
   text-align: left;
-  font-size: 0.98rem;
+  font-size: calc(0.98rem + 4pt);
   color: #d6e8fe;
   padding: 0.72rem 0.82rem;
   border-radius: 10px;
@@ -792,7 +792,7 @@ ul.text-left.tag li::before {
 
 .language-section .skill p {
   margin: 0;
-  font-size: 1rem;
+  font-size: calc(1rem + 4pt);
   line-height: 1.4;
   font-weight: 600;
   color: #e6f3ff;
@@ -835,7 +835,7 @@ ul.text-left.tag li::before {
   display: block;
   margin-top: 0.35rem;
   color: #c3d9f2;
-  font-size: 0.95rem;
+  font-size: calc(0.95rem + 4pt);
 }
 
 .footer {
@@ -858,7 +858,7 @@ ul.text-left.tag li::before {
 .footer-note {
   margin: 0.55rem 0 0;
   color: #c3d8f1;
-  font-size: 0.95rem;
+  font-size: calc(0.95rem + 4pt);
 }
 
 .footer .social-links {
@@ -930,7 +930,7 @@ ul.text-left.tag li::before {
 
 @media (max-width: 992px) {
   body {
-    font-size: 16.5px;
+    font-size: calc(16.5px + 4pt);
   }
 
   .hero {
@@ -975,13 +975,13 @@ ul.text-left.tag li::before {
   }
 
   .client-box p.tag {
-    font-size: 1rem;
+    font-size: calc(1rem + 4pt);
   }
 
   .announcement-desc,
   ul.text-left.tag li,
   .project-card p {
-    font-size: 1rem;
+    font-size: calc(1rem + 4pt);
   }
 
   .project-card {
@@ -994,7 +994,7 @@ ul.text-left.tag li::before {
 
   .sub-skills li,
   .language-section .skill p {
-    font-size: 0.95rem;
+    font-size: calc(0.95rem + 4pt);
   }
 }
 
@@ -1018,7 +1018,7 @@ ul.text-left.tag li::before {
   }
 
   .quick-nav a {
-    font-size: 0.72rem;
+    font-size: calc(0.72rem + 4pt);
     padding: 0.45rem 0.66rem;
   }
 
@@ -1033,11 +1033,11 @@ ul.text-left.tag li::before {
   }
 
   .contact-line {
-    font-size: 0.95rem;
+    font-size: calc(0.95rem + 4pt);
   }
 
   header.hero h3 {
-    font-size: 1rem;
+    font-size: calc(1rem + 4pt);
     line-height: 1.55;
   }
 
@@ -1059,7 +1059,7 @@ ul.text-left.tag li::before {
   .project-card p,
   .sub-skills li,
   .language-section .skill p {
-    font-size: 0.95rem;
+    font-size: calc(0.95rem + 4pt);
     line-height: 1.5;
   }
 
@@ -1121,7 +1121,7 @@ ul.text-left.tag li::before {
 
   .wayfair-wordmark {
     min-width: 100%;
-    font-size: 0.95rem;
+    font-size: calc(0.95rem + 4pt);
   }
 
   .client-box,
@@ -1150,7 +1150,7 @@ ul.text-left.tag li::before {
   .btn-ghost-neo {
     width: 100%;
     text-align: center;
-    font-size: 0.82rem;
+    font-size: calc(0.82rem + 4pt);
     padding: 0.88rem 1rem;
   }
 
@@ -1160,7 +1160,7 @@ ul.text-left.tag li::before {
   }
 
   .quick-nav a {
-    font-size: 0.67rem;
+    font-size: calc(0.67rem + 4pt);
     letter-spacing: 0.05em;
   }
 
@@ -1169,11 +1169,11 @@ ul.text-left.tag li::before {
   }
 
   header.hero h3 {
-    font-size: 0.96rem;
+    font-size: calc(0.96rem + 4pt);
   }
 
   .contact-line {
-    font-size: 0.9rem;
+    font-size: calc(0.9rem + 4pt);
   }
 
   .solar-system {
@@ -1185,11 +1185,11 @@ ul.text-left.tag li::before {
   }
 
   .badge-text {
-    font-size: 1.05rem;
+    font-size: calc(1.05rem + 4pt);
   }
 
   .wayfair-wordmark {
-    font-size: 0.85rem;
+    font-size: calc(0.85rem + 4pt);
     padding: 0.62rem 0.72rem;
   }
 
@@ -1199,7 +1199,7 @@ ul.text-left.tag li::before {
 
   .announcement-desc,
   ul.text-left.tag li {
-    font-size: 0.94rem;
+    font-size: calc(0.94rem + 4pt);
     line-height: 1.48;
   }
 }
@@ -1210,7 +1210,7 @@ ul.text-left.tag li::before {
   }
 
   .quick-nav a {
-    font-size: 0.63rem;
+    font-size: calc(0.63rem + 4pt);
     padding: 0.4rem 0.58rem;
   }
 
@@ -1219,7 +1219,7 @@ ul.text-left.tag li::before {
   }
 
   .contact-line {
-    font-size: 0.84rem;
+    font-size: calc(0.84rem + 4pt);
   }
 
   .sub-skills {
